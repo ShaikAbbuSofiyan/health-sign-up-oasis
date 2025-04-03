@@ -70,7 +70,7 @@ const SignupForm = () => {
   return (
     <div className="w-full max-w-md mx-auto p-6 bg-white rounded-xl shadow-md">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-health-600">Create Account</h2>
+        <h2 className="text-3xl font-bold text-green-600">Create Account</h2>
         <p className="text-muted-foreground mt-2">Join our healthcare platform to access premium services</p>
       </div>
 

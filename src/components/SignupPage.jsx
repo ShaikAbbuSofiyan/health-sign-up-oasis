@@ -10,9 +10,9 @@ const SignupPage = () => {
         <SignupForm />
       </div>
 
-      {/* Right side - Image */}
-      <div className="hidden md:flex md:flex-1 bg-health-500 items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-health-400/90 to-health-700/90"></div>
+      {/* Right side - Image - Changed to green color scheme */}
+      <div className="hidden md:flex md:flex-1 bg-green-500 items-center justify-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-green-400/90 to-green-700/90"></div>
         <div className="relative z-10 p-12 text-white max-w-md">
           <h2 className="text-4xl font-bold mb-6">Your Health, Our Priority</h2>
           <p className="text-lg mb-8">
