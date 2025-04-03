@@ -6,13 +6,13 @@ const SignupPage = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
       {/* Left side - Form */}
-      <div className="flex-1 flex items-center justify-center p-6 md:p-12">
+      <div className="flex-1 flex items-center justify-center p-6 md:p-12 bg-green-50">
         <SignupForm />
       </div>
 
-      {/* Right side - Image - Changed to green color scheme */}
-      <div className="hidden md:flex md:flex-1 bg-green-500 items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-green-400/90 to-green-700/90"></div>
+      {/* Right side - Image - Green color scheme */}
+      <div className="hidden md:flex md:flex-1 bg-green-600 items-center justify-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-green-500/90 to-green-800/90"></div>
         <div className="relative z-10 p-12 text-white max-w-md">
           <h2 className="text-4xl font-bold mb-6">Your Health, Our Priority</h2>
           <p className="text-lg mb-8">
@@ -21,7 +21,7 @@ const SignupPage = () => {
           </p>
           <div className="space-y-4">
             <div className="flex items-center">
-              <div className="bg-white/20 p-2 rounded-full mr-4">
+              <div className="bg-green-400/20 p-2 rounded-full mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -29,7 +29,7 @@ const SignupPage = () => {
               <p>24/7 Online Consultations</p>
             </div>
             <div className="flex items-center">
-              <div className="bg-white/20 p-2 rounded-full mr-4">
+              <div className="bg-green-400/20 p-2 rounded-full mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -37,7 +37,7 @@ const SignupPage = () => {
               <p>Secure Health Records</p>
             </div>
             <div className="flex items-center">
-              <div className="bg-white/20 p-2 rounded-full mr-4">
+              <div className="bg-green-400/20 p-2 rounded-full mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>

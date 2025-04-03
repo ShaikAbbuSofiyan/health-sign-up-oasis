@@ -68,10 +68,10 @@ const SignupForm = () => {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto p-6 bg-white rounded-xl shadow-md">
+    <div className="w-full max-w-md mx-auto p-6 bg-white rounded-xl shadow-md border border-green-100">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-green-600">Create Account</h2>
-        <p className="text-muted-foreground mt-2">Join our healthcare platform to access premium services</p>
+        <h2 className="text-3xl font-bold text-green-700">Create Account</h2>
+        <p className="text-green-600/70 mt-2">Join our healthcare platform to access premium services</p>
       </div>
 
       <Form {...form}>
@@ -81,13 +81,13 @@ const SignupForm = () => {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Username</FormLabel>
+                <FormLabel className="text-green-800">Username</FormLabel>
                 <FormControl>
                   <div className="relative">
-                    <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <User className="absolute left-3 top-3 h-4 w-4 text-green-500" />
                     <Input 
                       placeholder="johndoe" 
-                      className="pl-10" 
+                      className="pl-10 border-green-200 focus-visible:ring-green-500" 
                       {...field} 
                     />
                   </div>
@@ -102,13 +102,13 @@ const SignupForm = () => {
             name="phoneNumber"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Phone Number</FormLabel>
+                <FormLabel className="text-green-800">Phone Number</FormLabel>
                 <FormControl>
                   <div className="relative">
-                    <Phone className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Phone className="absolute left-3 top-3 h-4 w-4 text-green-500" />
                     <Input 
                       placeholder="1234567890" 
-                      className="pl-10" 
+                      className="pl-10 border-green-200 focus-visible:ring-green-500" 
                       type="tel"
                       {...field} 
                     />
@@ -124,13 +124,13 @@ const SignupForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel className="text-green-800">Email</FormLabel>
                 <FormControl>
                   <div className="relative">
-                    <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Mail className="absolute left-3 top-3 h-4 w-4 text-green-500" />
                     <Input 
                       placeholder="john.doe@example.com" 
-                      className="pl-10" 
+                      className="pl-10 border-green-200 focus-visible:ring-green-500" 
                       type="email"
                       {...field} 
                     />
@@ -146,19 +146,19 @@ const SignupForm = () => {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Password</FormLabel>
+                <FormLabel className="text-green-800">Password</FormLabel>
                 <FormControl>
                   <div className="relative">
-                    <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Lock className="absolute left-3 top-3 h-4 w-4 text-green-500" />
                     <Input 
                       type={showPassword ? "text" : "password"} 
-                      className="pl-10 pr-10" 
+                      className="pl-10 pr-10 border-green-200 focus-visible:ring-green-500" 
                       {...field} 
                     />
                     <button 
                       type="button" 
                       onClick={() => setShowPassword(!showPassword)}
-                      className="absolute right-3 top-3 text-muted-foreground hover:text-foreground"
+                      className="absolute right-3 top-3 text-green-500 hover:text-green-700"
                     >
                       {showPassword ? 
                         <EyeOff className="h-4 w-4" /> : 
@@ -167,7 +167,7 @@ const SignupForm = () => {
                     </button>
                   </div>
                 </FormControl>
-                <FormDescription className="text-xs">
+                <FormDescription className="text-xs text-green-600/80">
                   Password must be at least 8 characters with uppercase, lowercase, and numbers.
                 </FormDescription>
                 <FormMessage />
@@ -180,19 +180,19 @@ const SignupForm = () => {
             name="confirmPassword"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Confirm Password</FormLabel>
+                <FormLabel className="text-green-800">Confirm Password</FormLabel>
                 <FormControl>
                   <div className="relative">
-                    <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Lock className="absolute left-3 top-3 h-4 w-4 text-green-500" />
                     <Input 
                       type={showConfirmPassword ? "text" : "password"} 
-                      className="pl-10 pr-10" 
+                      className="pl-10 pr-10 border-green-200 focus-visible:ring-green-500" 
                       {...field} 
                     />
                     <button 
                       type="button" 
                       onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                      className="absolute right-3 top-3 text-muted-foreground hover:text-foreground"
+                      className="absolute right-3 top-3 text-green-500 hover:text-green-700"
                     >
                       {showConfirmPassword ? 
                         <EyeOff className="h-4 w-4" /> : 
@@ -206,16 +206,16 @@ const SignupForm = () => {
             )}
           />
 
-          <Button type="submit" className="w-full bg-health-500 hover:bg-health-600">
+          <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white">
             <Check className="mr-2 h-4 w-4" /> Create Account
           </Button>
         </form>
       </Form>
 
       <div className="mt-6 text-center text-sm">
-        <p className="text-muted-foreground">
+        <p className="text-green-600/80">
           Already have an account?{" "}
-          <a href="#" className="text-health-600 hover:underline font-medium">
+          <a href="#" className="text-green-700 hover:underline font-medium">
             Sign in
           </a>
         </p>
