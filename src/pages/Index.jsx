@@ -1,5 +1,5 @@
 
-import SignupPage from "@/components/SignupPage";
+import SignupPage from "@/components/SignupPage.jsx";
 
 const Index = () => {
   return <SignupPage />;
